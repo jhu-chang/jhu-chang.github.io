@@ -1,10 +1,10 @@
 # Site settings
-title: "Havee's Space"
-url: "//havee.me"
+title: "jhu-chang's Space"
+url: "jhu-chang.github.io"
 highlighter: rouge
 paginate: 5
 author:
-    name: Havee
+    name: jhu-chang
     github:
     email:
     gitcafe:
@@ -30,7 +30,7 @@ sass:
 # comment
 comments:
     duoshuo:
-        name: havanna
+        name: jhu-chang
         rcomments:
             num: 10
             avatar: 0
@@ -42,5 +42,5 @@ comments:
 # 网站统计
 analytics:
     baidu:
-        siteid: 625169d97c95b10732a31bbe33aa305d        # 百度统计 js 代码后的字符串
+        siteid:      # 百度统计 js 代码后的字符串
 
