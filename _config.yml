@@ -18,6 +18,9 @@ rss_path: /rss.xml
 # Build settings
 markdown: kramdown
 kramdown:
+  input: GFM
+  toc_levels: 1..6
+  enable_coderay: false
 permalink: /:categories/:year-:month/:title.html
 gems: [jekyll-paginate]
 
