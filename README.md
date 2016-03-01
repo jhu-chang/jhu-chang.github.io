@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jhu-chang/jhu-chang.github.io.svg?branch=master)](https://travis-ci.org/jhu-chang/jhu-chang.github.io)
+
 Forked from https://github.com/iHavee/iHavee.github.io
 
 require:
