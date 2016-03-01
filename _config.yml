@@ -23,8 +23,8 @@ kramdown:
   enable_coderay: false
   hard_wrap: false
   auto_ids: true
-  syntax_highlighter: rouge
-highlighter: rouge
+  #syntax_highlighter: rouge
+#highlighter: rouge
 permalink: /:categories/:year-:month/:title.html
 gems: [jekyll-paginate]
 
