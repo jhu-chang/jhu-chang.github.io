@@ -21,6 +21,10 @@ kramdown:
   input: GFM
   toc_levels: 1..6
   enable_coderay: false
+  hard_wrap: false
+  auto_ids: true
+  syntax_highlighter: rouge
+highlighter: rouge
 permalink: /:categories/:year-:month/:title.html
 gems: [jekyll-paginate]
 
