@@ -25,7 +25,7 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-      line_numbers: true 
+      line_numbers: false 
       start_line: 1
 permalink: /:categories/:year-:month/:title.html
 gems: [jekyll-paginate]
