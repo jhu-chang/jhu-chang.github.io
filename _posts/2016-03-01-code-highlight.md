@@ -9,7 +9,7 @@ tags: [Code, Highlight]
 Here is the doc to test code highlight
 
 ### C++
-```c++
+```cpp
 class A {
     public void f(int i) {
     }
