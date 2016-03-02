@@ -14,7 +14,7 @@
 /* Import style */
 @import "havee";
 
-.markdown-body pre.lines {
+.highlighter-rouge pre.lines {
   font-size: 12px;
   margin:0 10px 0 -20px;
   padding: 10px;
@@ -26,9 +26,9 @@
   color: #d6d6d6;
 }
 
-.markdown-body li pre,
-.markdown-body li pre.lines,
-.markdown-body dd pre,
-.markdown-body dd pre.lines {
+.highlighter-rouge li pre,
+.highlighter-rouge li pre.lines,
+.highlighter-rouge dd pre,
+.highlighter-rouge dd pre.lines {
   margin-left: -35px;
 }
