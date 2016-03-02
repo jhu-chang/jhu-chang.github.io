@@ -53,4 +53,33 @@ rm -fr "$WTMP_PATH"
 
 ```
 
+### Cmd
+```bat
+@echo off
+if "%1" == "" (
+    echo Please provide the correct properties file
+    goto END
+    )
 
+if "%VTBA_HOME%" == "" (
+    echo VTBA_HOME is not set
+    goto END
+    )
+
+if not exist "%VTBA_HOME%\jboss\server\vtba\deploy\weatherservice.war" (
+    echo Could not find the weather service war file under %VTBA_HOME%\jboss\server\vtba\deploy
+    goto END
+)
+
+mkdir "%TMP%\weather_tmp\WEB-INF\classes"
+copy "%1"  "%TMP%\weather_tmp\WEB-INF\classes\"
+jar uvf "%VTBA_HOME%\jboss\server\vtba\deploy\weatherservice.war" -C "%TMP%\weather_tmp" .
+rmdir /S /Q "%TMP%\weather_tmp"
+
+:END
+```
+
+### Ref 
+> ```python
+print("abcd")
+```
