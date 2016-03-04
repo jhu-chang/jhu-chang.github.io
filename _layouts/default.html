@@ -6,24 +6,19 @@
   <body>
 
     {% include sidebar.html %}
-
+    {% include header.html %} 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
-        </div>
-      </div>
+     
 
       <div class="container content">
         {{ content }}
       </div>
       {% include footer.html %}
     </div>
+
+     <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
@@ -43,6 +38,19 @@
           checkbox.checked = false;
         }, false);
       })(document);
+      // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
     </script>
   </body>
 </html>

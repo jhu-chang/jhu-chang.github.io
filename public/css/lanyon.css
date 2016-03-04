@@ -102,16 +102,45 @@ h1, h2, h3, h4, h5, h6 {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
+  display: inline;
   color: #505050;
 }
 .masthead-title a {
   color: #505050;
 }
 .masthead-title small {
-  font-size: 75%;
+  font-size: 90%;
   font-weight: 400;
   color: #c0c0c0;
   letter-spacing: 0;
+}
+.masthead-hypelink {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+  display: block!important;
+  float: right!important;
+  padding-bottom: 0;
+  overflow: visible!important;
+}
+
+.navbar-right li {
+    font-size: 80%;
+    min-width: 95px;
+    text-align: center;
+    position: relative;
+    display: block;
+    list-style: none;
+    float: left;
+    position: relative;
+    margin-bottom: 0rem;
+}
+
+.navbar-right {
+    float: right!important;
+    margin-right: -15px;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
 }
 
 @media (max-width: 48em) {
@@ -121,6 +150,7 @@ h1, h2, h3, h4, h5, h6 {
   .masthead-title small {
     display: none;
   }
+  
 }
 
 
@@ -408,6 +438,49 @@ a.pagination-item:hover {
   }
 }
 
+/**
+ * back to top
+ */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
 
 /*
  * Reverse layout
