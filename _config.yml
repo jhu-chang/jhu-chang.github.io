@@ -1,0 +1,25 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+#relative_permalinks: true
+
+# Setup
+title:               jhu-chang's blog 
+tagline:             'Write ups'
+description:         'This is jhu-chang blog post'
+url:                 http://jhu-chang.github.io
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              jhu-chang 
+  url:               http://jhu-chang.github.io
+  email:             gt.jhu.chang@gmail.com
+
+# Custom vars
+version:             1.0.0
+
+gems:
+  - jekyll-paginate
