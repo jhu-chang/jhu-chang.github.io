@@ -44,7 +44,7 @@ if [[ ! -f "$VTBA_HOME/jboss/server/vtba/deploy/weatherservice.war" ]]; then
     echo "Could not find the weather service war file under $VTBA_HOME/jboss/server/vtba/deploy"
     exit 1
 fi
-
+echo "Could not find the weather service war file under $VTBA_HOME/jboss/server/vtba/deploy, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time"
 WTMP_PATH=/tmp/weather_tmp
 mkdir -p "$WTMP_PATH/WEB-INF/classes"
 cp "$1"  "$WTMP_PATH/WEB-INF/classes/"
@@ -75,7 +75,7 @@ mkdir "%TMP%\weather_tmp\WEB-INF\classes"
 copy "%1"  "%TMP%\weather_tmp\WEB-INF\classes\"
 jar uvf "%VTBA_HOME%\jboss\server\vtba\deploy\weatherservice.war" -C "%TMP%\weather_tmp" .
 rmdir /S /Q "%TMP%\weather_tmp"
-
+echo "Could not find the weather service war file under $VTBA_HOME/jboss/server/vtba/deploy, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time, this is a very long time"
 :END
 ```
 
@@ -83,6 +83,9 @@ rmdir /S /Q "%TMP%\weather_tmp"
 > ```python
 print("abcd")
 ```
+
+### Inline hightlight
+Here is the inline hightlight `print("abcd")` for python, hope it on monospace
 
 ### List
 - item 1
