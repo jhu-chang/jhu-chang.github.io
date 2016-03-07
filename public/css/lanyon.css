@@ -62,6 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrap {
   position: relative;
+  padding-top: 4.75rem;
   width: 100%;
 }
 
@@ -92,6 +93,40 @@ h1, h2, h3, h4, h5, h6 {
  *
  * Super small header above the content for site name and short description.
  */
+header {
+    display:block;
+    float:left;
+    min-width:100%;
+    min-height: 4.75rem;
+    height:4.75rem;
+    background-color: #fff;
+    /*background-color:#191718;*/
+    position:fixed;
+    border-bottom-color: #191718;
+    z-index:9;
+    top:0rem;
+    opacity:1;
+    -webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    -ms-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
+}
+
+.nav-up {
+    top: -4.25rem;
+}
+
+header:hover {
+    display:block;
+    opacity:1;
+    top:0px;
+    -webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    -ms-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
+}
 
 .masthead {
   padding-top:    1rem;
@@ -250,6 +285,7 @@ a.sidebar-nav-item:focus {
   display: block;
   padding: .25rem .75rem;
   color: #505050;
+  z-index: 10;
   background-color: #fff;
   border-radius: .25rem;
   cursor: pointer;
@@ -359,8 +395,8 @@ a.sidebar-nav-item:focus {
 /* Meta data line below post title */
 .post-date {
   display: block;
-  margin-top: -.25rem;
-  margin-bottom: 1.25rem;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
   border-bottom-style: inset;
   border-color: antiquewhite;
   color: #9a9a9a;
