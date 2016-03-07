@@ -4,6 +4,7 @@ title: Home
 ---
 
 <div class="posts">
+  <!--
   {% for post in paginator.posts %}
   <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
   {% if post.content contains "<!-- more -->" %}
@@ -12,9 +13,22 @@ title: Home
   {{ post.content | strip_html | truncate:100 }}
   {% endif %}
   {% endfor %}
+  -->
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
   <!-- Pagination links -->
-  <div class="pull-right">
+  <!--div class="pull-right">
     {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
     <a class="btn btn-primary btn-sm" href="/">Home</a>
@@ -35,5 +49,27 @@ title: Home
     <span><a class="btn btn-primary btn-sm disabled">Next &raquo;</a></span>
     <span><a class="btn btn-primary btn-sm disabled">Last</a></span>
     {% endif %}
-  </div>
+  </div-->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <a class="pagination-item older" href="/">Home</a>
+    <a class="pagination-item older" href="/">&laquo; Prev</a>
+    {% else %}
+    <a class="pagination-item older" href="/">Home</a>
+    <a class="pagination-item older" href="/page{{paginator.previous_page}}/">&laquo; Prev</a>
+    {% endif %}
+    {% else %}
+    <span><a class="pagination-item older inactive" href="/">Home</a></span>
+    <span><a class="pagination-item older inactive">&laquo; Prev</a></span>
+    {% endif %}
+    <span><a class="pagination-item newer inactive">Page: {{paginator.page}} of {{paginator.total_pages}}</a></span>
+    {% if paginator.next_page %}
+    <a class="pagination-item newer" href="/page{{paginator.next_page}}/">Next &raquo;</a>
+    <a class="pagination-item newer" href="/page{{paginator.total_pages}}/">Last</a>
+    {% else if paginator.page == paginator.total_pages %}
+    <span><a class="pagination-item newer inactive">Next &raquo;</a></span>
+    <span><a class="pagination-item newer inactive">Last</a></span>
+    {% endif %}
+</div>
 </div>
