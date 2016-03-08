@@ -3,7 +3,7 @@ date: 2016-02-29 10:46:31+00:00
 layout: post
 title: Markdown Pad 2
 categories: Doc
-tags: [Markdown, Key]
+tags: [markdown, key]
 ---
 
 Here is the key information for [Markdown Pad 2](http://markdownpad.com/)

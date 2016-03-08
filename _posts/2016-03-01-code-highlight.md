@@ -3,7 +3,7 @@ date: 2016-03-01 10:00:00+00:00
 layout: post
 title: "Test the code highlight"
 categories: Misc
-tags: [Code, Highlight]
+tags: [code, highlight]
 ---
 
 Here is the doc to test code highlight
