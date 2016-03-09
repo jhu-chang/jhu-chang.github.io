@@ -10,7 +10,7 @@ tagline:             'Write ups'
 description:         'This is jhu-chang blog post'
 url:                 http://jhu-chang.github.io
 baseurl:             ''
-paginate:            5
+paginate:            3
 
 # About/contact
 author:
