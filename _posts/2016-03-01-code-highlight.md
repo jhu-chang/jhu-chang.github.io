@@ -54,7 +54,7 @@ rm -fr "$WTMP_PATH"
 ```
 
 ### Cmd
-```bat
+```batchfile
 @echo off
 if "%1" == "" (
     echo Please provide the correct properties file
