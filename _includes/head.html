@@ -15,9 +15,13 @@
   </title>
 
   <!-- CSS -->
-  <script type="text/javascript" src="{{ "/public/js/jquery-1.11.1.min.js" | prepend:site.baseurl }}"></script>
+  <!--script type="text/javascript" src="{{ "/public/js/jquery-1.11.1.min.js" | prepend:site.baseurl }}"></script-->
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
   <!--script type="text/javascript" src="{{ "/public/js/index.js" | prepend:site.baseurl }}"></script-->
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <!--link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"-->
+  <!-- Cross domain issue of baidu fonts -->
+  <!--link href="//apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.css" rel="stylesheet"-->
+  <link href="//libs.useso.com/js/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
@@ -29,4 +33,5 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
 </head>
