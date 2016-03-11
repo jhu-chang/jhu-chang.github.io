@@ -31,7 +31,14 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-      line_numbers: false 
+    # line_numbers: false # This active all linenos, not good for inline code
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
       start_line: 1
 
 gems:

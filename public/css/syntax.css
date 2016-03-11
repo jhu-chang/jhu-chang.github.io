@@ -1,3 +1,70 @@
+.highlight tbody {
+}
+
+.highlight table {
+  margin-bottom: 0rem!important;
+  width: 100%!important;
+  border: 0px solid #e5e5e5!important;
+  border-collapse: collapse!important;
+  display: table!important;
+}
+
+.highlight td,
+.highlight th {
+  padding: .0rem .0rem!important;
+  border: none!important;
+  display: table-cell!important;
+  vertical-align: top;
+}
+
+.highlight tbody tr:nth-child(odd) td,
+.highlight tbody tr:nth-child(odd) th {
+  background-color: rgba(0, 0, 0, 0)!important;
+}
+
+/**
+table[style] {
+    display: inline-block;
+}
+
+table[style] td,
+table[style] th,
+table[style] tbody tr:nth-child(odd) td,
+table[style] tbody tr:nth-child(odd) th{
+    margin: .0rem .0rem;
+    border: none;
+    padding: .0rem .0rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+*/
+
+.highlight .gutter {
+    padding: .0rem .25rem .0rem .0rem;
+    display: table-cell;
+}
+
+.highlight .gl {
+    width: auto;
+}
+
+.gutter {
+    display: none!important;
+}
+
+
+.highlight .lineno { 
+    color: #ccc; 
+    padding-top: 1.0rem;
+    padding-left: 0;
+    padding-right: 0.25rem;
+    border-right:1px solid #ccc;
+    width: auto;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
 .hll { background-color: #ffffcc }
 .c { color: #408080; font-style: italic } /* Comment */
 .err { border: 1px solid #FF0000 } /* Error */
