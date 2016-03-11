@@ -167,16 +167,20 @@ p code {
   margin-top: 0;
   margin-bottom: 0;
   background-color: #f9f9f9;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 pre {
-  max-width: 28rem;
+  max-width: 24rem;
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
   font-size: .8rem;
-  line-height: 1.4;
+  line-height: 1.1rem;
   /**
   white-space: pre;
   white-space: pre-wrap;
@@ -185,6 +189,21 @@ pre {
   */
   background-color: #f9f9f9;
   overflow-x:auto;
+}
+
+@media (min-width: 38em) {
+  pre {
+    max-width: 28rem;
+  }
+}
+@media (min-width: 56em) {
+  pre {
+    max-width: 34rem;
+  }
+}
+
+td pre {
+    margin: 0;
 }
 
 pre code {
