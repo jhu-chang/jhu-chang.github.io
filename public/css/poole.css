@@ -202,6 +202,10 @@ pre {
   }
 }
 
+.code pre {
+    padding-left: 0.4rem;
+}
+
 td pre {
     margin: 0;
 }

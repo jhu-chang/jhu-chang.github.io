@@ -35,6 +35,6 @@ Here is the sample code to dynamic create the class in `scala`
             |    }
             |""".stripMargin
    evaluator.cook("generated.java", code)
-   val instance = evaluator.getClazz().newInstance().asInstanceOf[GeneratedClass]
+   val instance = evaluator.getClazz().newInstance().asInstanceOf[Test]
    instance.f()
    ```

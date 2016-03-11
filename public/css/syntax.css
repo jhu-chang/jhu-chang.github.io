@@ -44,13 +44,8 @@ table[style] tbody tr:nth-child(odd) th{
 }
 
 .highlight .gl {
-    width: auto;
+    width: 2.3rem;
 }
-
-.gutter {
-    display: none!important;
-}
-
 
 .highlight .lineno { 
     color: #ccc; 
@@ -58,7 +53,7 @@ table[style] tbody tr:nth-child(odd) th{
     padding-left: 0;
     padding-right: 0.25rem;
     border-right:1px solid #ccc;
-    width: auto;
+    width: 2rem;
     white-space: pre;
     white-space: pre-wrap;
     word-break: break-all;
