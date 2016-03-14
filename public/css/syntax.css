@@ -7,6 +7,7 @@
   border: 0px solid #e5e5e5!important;
   border-collapse: collapse!important;
   display: table!important;
+  table-layout: fixed;
 }
 
 .highlight td,
@@ -15,6 +16,7 @@
   border: none!important;
   display: table-cell!important;
   vertical-align: top;
+  width: 100%
 }
 
 .highlight tbody tr:nth-child(odd) td,
@@ -56,8 +58,10 @@ table[style] tbody tr:nth-child(odd) th{
     width: 2rem;
     white-space: pre;
     white-space: pre-wrap;
+    /**
     word-break: break-all;
     word-wrap: break-word;
+    */
 }
 
 .hll { background-color: #ffffcc }
