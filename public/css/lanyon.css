@@ -190,8 +190,14 @@ nav ul li:first-child {
   .masthead-title small {
     display: none;
   }
+  /*
+   * Tune the wrap padding when the nav bar is below the title
+   */
   .right {
       float: none;
+  }
+  .wrap {
+    padding-top: 5.25rem;
   }
 }
 
