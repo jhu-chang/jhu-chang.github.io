@@ -141,5 +141,18 @@ Here are  the steps to custum a source to report this kind of information using 
 
    You can set this properties via spark configuration which begins with `spark.metrics.conf.`
 
+   ```bash      
+   spark.metrics.conf.*.sink.graphite.class=org.apache.spark.metrics.sink.GraphiteSink
+   spark.metrics.conf.*.sink.graphite.host=12.34.56.78
+   spark.metrics.conf.*.sink.graphite.port=34567
+   spark.metrics.conf.*.sink.graphite.period=10
+   spark.metrics.conf.master.source.jvm.class=org.apache.spark.metrics.source.JvmSource
+   spark.metrics.conf.worker.source.jvm.class=org.apache.spark.metrics.source.JvmSource
+   spark.metrics.conf.driver.source.jvm.class=org.apache.spark.metrics.source.JvmSource
+   spark.metrics.conf.executor.source.jvm.class=org.apache.spark.metrics.source.JvmSource
+   spark.metrics.conf.driver.source.system.class=org.apache.spark.metrics.source.SystemMetrics
+   spark.metrics.conf.driver.source.proc.class=org.apache.spark.metrics.source.ProcMetrics
+   ```
+
 5. Proc cpu can use the same method.
  
