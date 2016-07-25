@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Custom spark metric to report process and system information"
-category: "Code"
+category: "BigData"
 tags: [scala,spark,code]
 ---
 

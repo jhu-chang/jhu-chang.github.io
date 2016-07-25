@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jupyter Magics"
-category: "Doc"
+category: "Python"
 tags: [magic,jupyter,python]
 ---
 

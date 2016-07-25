@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Port forward"
-category: "Doc"
+category: "Utils"
 tags: [windows,linux,tcp,ip]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to install Merlin to R6300V2"
-category: "DOc"
+category: "Doc"
 tags: [router]
 ---
 

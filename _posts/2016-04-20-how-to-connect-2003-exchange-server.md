@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to connect 2003 exchange server"
-category: "Doc"
+category: "Utils"
 tags: [windows,outlook,mac]
 ---
 
